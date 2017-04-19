@@ -1,0 +1,31 @@
+class_name: User
+objects:
+  - id: 1
+    first_name: Peter
+    last_name: Pan
+    email: peter@pan.com
+
+  - id: 2
+    first_name: John
+    last_name: Doe
+    email: john@doe.com
+
+  - id: 3
+    first_name: Bilbo 
+    last_name: Bolson
+    email: bilbo@bolson.com
+
+  - id: 4
+    first_name: Samsagaz 
+    last_name: Gamyi
+    email: samsagaz@gamyi.com
+
+  - id: 5
+    first_name: Peregrin 
+    last_name: Tuk
+    email: peregrin@tuk.com
+
+  - id: 6
+    first_name: Meriadoc 
+    last_name: Brandigamo
+    email: meriadoc@brandigamo.org

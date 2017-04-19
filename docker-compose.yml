@@ -1,0 +1,22 @@
+version: "2"
+services:
+  db:
+    image: postgres:9.6.1
+    volumes:
+      - ./docker/postgresql.conf:/etc/postgresql.conf
+    ports: 
+      - "5432:5432"
+    command: postgres -c config_file=/etc/postgresql.conf
+  redis:
+    image: redis:3.2.0-alpine
+    ports:
+      - '6379:6379'
+  redis-commander:
+    build: docker/redis-commander
+    ports:
+      - '8085:8081'
+    links:
+      - redis:redis-db
+    command: --redis-host redis-db
+
+ 

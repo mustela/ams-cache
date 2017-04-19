@@ -1,0 +1,4 @@
+class_name: Organization
+objects: 
+  - id: 1
+    name: Test
