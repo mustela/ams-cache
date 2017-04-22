@@ -8,7 +8,7 @@ default: &default
   prepared_statements: false
   adapter: postgresql
   encoding: unicode
-  host: <%= ENV['PGHOST'] || '127.0.0.1' %>
+  host: <%= ENV['PGHOST'] || 'database' %>
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV["DB_POOL"] || ENV['RAILS_MAX_THREADS'] || 20 %>
