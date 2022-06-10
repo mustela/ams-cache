@@ -1,5 +1,16 @@
 version: "2"
 services:
+  rails:
+    build:
+      context: .
+      dockerfile: docker/rails-bench/Dockerfile
+    volumes:
+      - .:/usr/src/app/
+    links:
+      - redis:redis-db
+      - db:database
+    command: rake test:benchmark
+
   db:
     image: postgres:9.6.1
     volumes:
